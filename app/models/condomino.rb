@@ -1,4 +1,5 @@
 class Condomino < ApplicationRecord
+
   has_many :reservas
 
   validates :nome, presence: true, length: {minimum: 5}, numericality: false
