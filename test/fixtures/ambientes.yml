@@ -2,8 +2,8 @@
 
 one:
   nome: MyString
-  cnpj: MyString
+  tipo: MyString
 
 two:
   nome: MyString
-  cnpj: MyString
+  tipo: MyString

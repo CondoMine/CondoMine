@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Rails CondoMine: test" uuid="7637cb98-5bf7-4a35-874e-4b5a4e580319">
-      <driver-ref>postgresql</driver-ref>
+    <data-source source="LOCAL" name="SQLite - identifier.sqlite" uuid="e360138b-9bae-4736-8dc5-0a25184f6308">
+      <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
-      <imported>true</imported>
-      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/CondoMine_test</jdbc-url>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:identifier.sqlite</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="Rails CondoMine: development" uuid="c723c6c1-9e8b-4106-99bf-d77ba2a61a7f">
-      <driver-ref>postgresql</driver-ref>
+    <data-source source="LOCAL" name="Rails CondoMine: development" uuid="0a92c38f-c15e-4301-8d0e-46c8f8b68a45">
+      <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
       <remarks>$PROJECT_DIR$/config/database.yml</remarks>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/CondoMineDev</jdbc-url>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\tayan\RubymineProjects\CondoMine\db\development.sqlite3</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="Rails CondoMine: test [2]" uuid="6ac29347-4643-4200-92ae-1b9dd2ca88fb">
-      <driver-ref>postgresql</driver-ref>
+    <data-source source="LOCAL" name="Rails CondoMine: test" uuid="77d05ea7-c7aa-4703-a4f0-0ae894bfed11">
+      <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
       <remarks>$PROJECT_DIR$/config/database.yml</remarks>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/CondoMine_test</jdbc-url>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\tayan\RubymineProjects\CondoMine\db\test.sqlite3</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

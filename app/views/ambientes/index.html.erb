@@ -1,0 +1,20 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Ambientes</h1>
+
+<div id="ambientes">
+  <% @ambientes.each do |ambiente| %>
+    <%= render ambiente %>
+    <p>
+      <%= link_to "Show this ambiente", ambiente %>
+    </p>
+  <% end %>
+</div>
+
+<div>
+    <%= link_to "New ambiente", new_ambiente_path %>
+</div>
+
+<div>
+    <%= link_to "Back to home", "/" %>
+</div>

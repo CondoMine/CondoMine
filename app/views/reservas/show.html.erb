@@ -1,0 +1,28 @@
+<p style="color: green"><%= notice %></p>
+
+<h2>Detalhes da Reserva</h2>
+
+<div class="details">
+  <p><span class="label">Data de Início da Reserva: </span><span class="value"><%= @reserva.data_ini.present? ? @reserva.data_ini.strftime("%d/%m/%Y") : "Data de início não definida" %>, <%= @reserva.hora_ini.present? ? @reserva.hora_ini.strftime("%H:%M") : "Hora de início não definida" %></span></p>
+</div>
+
+<div class="details">
+  <p><span class="label">Data de Final da Reserva : </span><span class="value"><%= @reserva.data_fim.present? ? @reserva.data_fim.strftime("%d/%m/%Y") : "Data do fim não definida" %>, <%= @reserva.hora_fim.present? ? @reserva.hora_fim.strftime("%H:%M") : "Hora do fim não definida" %></span></p>
+</div>
+
+<div class="details">
+  <p><span class="label">Ambiente: </span><span class="value"><%= @reserva.ambiente.present? ? @reserva.ambiente.nome : "Ambiente não definido" %></span></p>
+</div>
+
+<div class="details">
+  <p><span class="label">Condômino: </span><span class="value"><%= @reserva.condomino.present? ? @reserva.condomino.nome : "Condômino não definido" %></span></p>
+</div>
+
+<%= render @reserva %>
+
+<div>
+  <%= link_to "Editar esta reserva", edit_reserva_path(@reserva) %> |
+  <%= link_to "Voltar para reservas", reservas_path %>
+
+  <%= button_to "Destroy this reserva", @reserva, method: :delete, data: { confirm: "Tem certeza?" } %>
+</div>

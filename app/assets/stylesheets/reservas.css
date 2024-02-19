@@ -1,0 +1,62 @@
+.reserva-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.reserva-form .field {
+  margin-bottom: 20px;
+}
+
+.reserva-form .field label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+
+.reserva-form .field select,
+.reserva-form .field input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.reserva-form .error-message {
+  color: red;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.reserva-form .error-message h2 {
+  font-size: 22px;
+}
+
+.reserva-form .error-message ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.reserva-form .error-message ul li {
+  margin-bottom: 5px;
+}
+
+.reserva-form .actions {
+  margin-top: 20px;
+}
+
+.reserva-form .actions input[type="submit"] {
+  background-color: #4285f4;
+  color: #fff;
+  padding: 12px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.reserva-form .actions input[type="submit"]:hover {
+  background-color: #3071d5;
+}

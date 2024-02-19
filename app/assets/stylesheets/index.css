@@ -1,9 +1,34 @@
+body{
+    background-color: #f0f8ff;
+}
+
+h1 {
+    font-size: 2em;
+    color: #4169e1;
+}
+
+p {
+    font-size: 1.5em;
+    color: #4682b4;
+}
+
 .modulo{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 150px;
     height: 150px;
-    border: 1px solid black;
+    border: 1px solid #87ceeb;
+    background-color: #e0f7fa;
     border-radius: 13px;
+}
+
+.modulo a {
+    font-size: 1.2em;
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.modulo a:hover {
+    text-decoration: underline;
 }

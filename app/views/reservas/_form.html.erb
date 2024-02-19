@@ -1,0 +1,46 @@
+<%= form_with(model: reserva, class: 'reserva-form') do |form| %>
+  <% if reserva.errors.any? %>
+    <div class="error-message">
+      <h2><%= pluralize(reserva.errors.count, "error") %> prohibited this reserva from being saved:</h2>
+      <ul>
+        <% reserva.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :condomino_id %>
+    <%= form.collection_select :condomino_id, Condomino.all, :id, :nome, prompt: "Selecione um Condômino" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ambiente_id %>
+    <%= form.collection_select :ambiente_id, Ambiente.all, :id, :nome, prompt: "Selecione um Ambiente" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data_ini, "Data Inicial da Reserva" %>
+    <%= form.date_field :data_ini, start_year: Date.current.year, end_year: 2100, default: Date.current + 3.days %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data_fim, "Data Final da Reserva" %>
+    <%= form.date_field :data_fim, start_year: Date.current.year, end_year: 2100 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hora_ini, "Hora Inicial da Reserva" %>
+    <%= form.time_field :hora_ini %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hora_fim, "Hora Final da Reserva" %>
+    <%= form.time_field :hora_fim %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

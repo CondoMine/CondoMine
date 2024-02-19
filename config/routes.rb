@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :ambientes
+  resources :reservas
   resources :condominos
  
   get 'welcome/index'
