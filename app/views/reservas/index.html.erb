@@ -1,20 +1,68 @@
-<p style="color: green"><%= notice %></p>
+<%= stylesheet_link_tag 'paginationIndex' %>
 
-<h1>Reservas</h1>
+<div class="container-view">
+    
+    <div class="container-message">
+      <p style="color: green"><%= notice %></p> 
+    </div>
 
-<div id="reservas">
-  <% @reservas.each do |reserva| %>
-    <%= render reserva %>
-    <p>
-      <%= link_to "Mostrar esta reserva", reserva %>
-    </p>
-  <% end %>
+    <div class="container-tittle">
+      <h1>Reservas</h1>
+    </div>
+    
+
+    <div class="container-buttons">
+    
+      <%= link_to "Voltar", "/" %>
+
+      <%= link_to "Nova reserva", new_reserva_path %>
+    </div>
+
+    <div class="container-lista">
+
+      <div class="box-list">
+        <div class="header-list">
+            <div>
+              <strong>INÍCIO</strong>  
+            </div>
+            <div>
+             <strong>FIM</strong>     
+            </div>
+            <div>
+             <strong>AMBIENTE</strong>     
+            </div>
+            <div>
+             <strong>CONDÔMINO</strong>     
+            </div>
+            <div>
+              
+            </div>
+
+        </div>
+        <div class="body-list">
+          <% @reservas.each do |reserva| %>
+            <div class="registro">
+              <div>
+                <%= reserva.data_ini %>
+              </div>
+              <div>
+                <%= reserva.data_fim %>
+              </div>
+              <div>
+                <%= reserva.ambiente.nome %>
+              </div>
+              <div>
+                <%= reserva.condomino.nome %>
+              </div>
+              <div>
+                <%= link_to "Visualizar reserva", reserva %>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
 </div>
 
-<div>
-    <%= link_to "Nova reserva", new_reserva_path %>
-</div>
 
-<div>
-    <%= link_to "Back to home", "/" %>
-</div>
+

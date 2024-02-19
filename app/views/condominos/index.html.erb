@@ -1,23 +1,71 @@
+<%= stylesheet_link_tag 'paginationIndex' %>
 
-<p style="color: green"><%= notice %></p>
+<div class="container-view">
+    
+    <div class="container-message">
+      <p style="color: green"><%= notice %></p> 
+    </div>
 
-<h1>Condominos</h1>
+    <div class="container-tittle">
+      <h1>Condôminos</h1>
+    </div>
+    
 
-<div id="condominos">
-  <% @condominos.each do |condomino| %>
-    <%= render condomino %>
-    <p>
-      <%= link_to "Mostrar esse Condomino", condomino %>
-    </p>
-  <% end %>
+    <div class="container-buttons">
+    
+      <%= link_to "Voltar", "/" %>
+
+      <%= link_to "Novo Condômino", new_condomino_path %>
+    </div>
+
+    <div class="container-lista">
+      <div class="filtro-lista">
+        <%= form_tag(condominos_path, method: "get") do %>
+          <%= text_field_tag :search, params[:search], placeholder: "Buscar por CPF ou nome" %>
+          <%= submit_tag "Buscar" %>
+        <% end %>
+      </div>
+      <div class="box-list">
+        <div class="header-list">
+            <div>
+              <strong>NOME</strong>  
+            </div>
+            <div>
+             <strong>CPF </strong>     
+            </div>
+            <div>
+              <strong>CONTATO</strong>  
+            </div>
+            <div>
+              
+            </div>
+
+        </div>
+        <div class="body-list">
+          <% @condominos.each do |condomino| %>
+            <div class="registro">
+              <div>
+                <%= condomino.nome %>
+              </div>
+              <div>
+                <%= condomino.cpf %>
+              </div>
+              <div>
+                <%= condomino.contato %>
+              </div>
+              <div>
+                <%= link_to "Visualizar Condômino", condomino %>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
 </div>
 
-<div>
-    <%= link_to "Novo Condomino", new_condomino_path %>
-</div>
 
-<div>
-    <%= link_to "Back to home", "/" %>
-</div>
+
+
+
 
 

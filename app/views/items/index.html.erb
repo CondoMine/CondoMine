@@ -7,18 +7,18 @@
     </div>
 
     <div class="container-tittle">
-      <h1>Ambientes</h1>
+      <h1>Itens</h1>
     </div>
     
 
-    <div class="container-buttons">
+    <div style="width:110%;" class="container-buttons">
     
       <%= link_to "Voltar", "/" %>
 
-      <%= link_to "Novo ambiente", new_ambiente_path %>
+      <%= link_to "Novo item", new_item_path %>
     </div>
 
-    <div class="container-lista">
+    <div style="width:110%;" class="container-lista">
 
       <div class="box-list">
         <div class="header-list">
@@ -26,7 +26,16 @@
               <strong>NOME</strong>  
             </div>
             <div>
+             <strong>ESTADO</strong>     
+            </div>
+            <div>
              <strong>TIPO</strong>     
+            </div>
+            <div>
+             <strong>DATA ENTRADA</strong>     
+            </div>
+            <div>
+             <strong>AMBIENTE</strong>     
             </div>
             <div>
               
@@ -34,16 +43,25 @@
 
         </div>
         <div class="body-list">
-          <% @ambientes.each do |ambiente| %>
+          <% @items.each do |item| %>
             <div class="registro">
               <div>
-                <%= ambiente.nome %>
+                <%= item.nome %>
               </div>
               <div>
-                <%= ambiente.tipo %>
+                <%= item.estado %>
               </div>
               <div>
-                <%= link_to "Visualizar ambiente", ambiente %>
+                <%= item.tipo %>
+              </div>
+              <div>
+                <%= item.data_entrada %>
+              </div>
+              <div>
+                <%= item.ambiente.nome %>
+              </div>
+              <div>
+                <%= link_to "Visualizar item", item %>
               </div>
             </div>
           <% end %>
@@ -51,6 +69,8 @@
       </div>
     </div>
 </div>
+
+
 
 
 

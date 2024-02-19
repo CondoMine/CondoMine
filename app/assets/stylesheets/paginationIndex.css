@@ -1,0 +1,63 @@
+/* css modularizado */
+.container-message,
+.container-tittle,
+.container-lista{
+    width: 100%;
+}
+
+
+/* CSS especifico  */
+
+.container-view{
+    width: 80%;
+    height: max-content;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.container-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-tittle{
+    text-align: center;
+    font-style: italic;
+}
+
+.container-lista,
+.container-buttons {
+    width: 85%;
+    margin: 10px 0 0 0;
+    padding: 5px;
+}
+
+.header-list,.registro{
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.322);
+    margin: 9px 0 0 0 ;
+    line-height: 35px;
+}
+.header-list{
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.header-list div,
+.registro div{
+    flex: 1;
+}
+
+.filtro-lista{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+/* classes genericas */
+.border {
+    border: 1px solid black;
+}

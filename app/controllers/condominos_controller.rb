@@ -3,7 +3,15 @@ class CondominosController < ApplicationController
 
   # GET /condominos or /condominos.json
   def index
-    @condominos = Condomino.all
+    @condominos = if params[:search]
+                    if params[:search].match?(/^\d+$/) # Se o parâmetro de busca for um número (possivelmente um CPF)
+                      Condomino.where(cpf: params[:search])
+                    else
+                      Condomino.where('nome LIKE ?', "%#{params[:search]}%")
+                    end
+                  else
+                    Condomino.all
+                  end
   end
 
   # GET /condominos/1 or /condominos/1.json

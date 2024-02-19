@@ -7,7 +7,7 @@
     </div>
 
     <div class="container-tittle">
-      <h1>Ambientes</h1>
+      <h1>Funcionarios</h1>
     </div>
     
 
@@ -15,7 +15,7 @@
     
       <%= link_to "Voltar", "/" %>
 
-      <%= link_to "Novo ambiente", new_ambiente_path %>
+      <%= link_to "Novo funcionario", new_funcionario_path %>
     </div>
 
     <div class="container-lista">
@@ -29,21 +29,27 @@
              <strong>TIPO</strong>     
             </div>
             <div>
+             <strong>FUNÇÃO</strong>     
+            </div>
+            <div>
               
             </div>
 
         </div>
         <div class="body-list">
-          <% @ambientes.each do |ambiente| %>
+          <% @funcionarios.each do |funcionario| %>
             <div class="registro">
               <div>
-                <%= ambiente.nome %>
+                <%= funcionario.nome %>
               </div>
               <div>
-                <%= ambiente.tipo %>
+                <%= funcionario.cpf %>
               </div>
               <div>
-                <%= link_to "Visualizar ambiente", ambiente %>
+                <%= funcionario.funcao %>
+              </div>
+              <div>
+                <%= link_to "Visualizar funcionario", funcionario %>
               </div>
             </div>
           <% end %>

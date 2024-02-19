@@ -13,5 +13,9 @@
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" exact-version="0" />
       <schema-mapping />
     </data-source>
+    <data-source name="development" uuid="a6a482ff-3b44-45bb-84c8-0289afc4f4fb">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" exact-version="0" />
+      <schema-mapping />
+    </data-source>
   </component>
 </project>

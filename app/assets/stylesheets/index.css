@@ -32,3 +32,8 @@ p {
 .modulo a:hover {
     text-decoration: underline;
 }
+
+.container {
+    display: flex;
+    gap: 20px;
+}

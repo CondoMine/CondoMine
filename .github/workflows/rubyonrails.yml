@@ -83,3 +83,4 @@ jobs:
           bundle exec rails test test/models/reserva_test.rb
           bundle exec rails test test/models/condomino_test.rb
           bundle exec rails test test/models/ambiente_test.rb
+          bundle exec rails test test/models/funcionario_test.rb

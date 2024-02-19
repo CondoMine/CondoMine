@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="Rails CondoMine: development">
+<<<<<<< HEAD
   <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.48">
+=======
+  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.32">
+>>>>>>> 3fbff7d2c69d2f9d5e54656e3162f9eab053a511
     <root id="1"/>
     <collation id="2" parent="1" name="RTRIM"/>
     <collation id="3" parent="1" name="NOCASE"/>
