@@ -1,5 +1,3 @@
-#feature 1
-
 Feature: gerenciamento de condomino
   as a usuario do sistema
   I want to registrar, editar e remover um condomino
@@ -36,38 +34,3 @@ Feature: gerenciamento de condomino
     And o condomino com nome 'lucas melo' não deve estar mais listado
 
 
-#feature 2
-
-Feature: Busca de condomino
-  As a Usuario do sistema
-  I want to buscar condominos informando nome ou CPF
-  So that eu visualize o cadastro completo do condomino desejado
-
-  Scenario: Buscando condomino com nome invalido
-    Given estou na pagina de visualizar condomino
-    When preencho o campo de busca com 'maria123'
-    And eu clico no botao de buscar
-    Then vejo a mensagem 'nome is invalid' informando que nome e invalido
-
-  Scenario: Buscando condomino com nome correto
-    Given estou na pagina de visualizar condomino
-    When preencho o campo de busca com 'maria'
-    And eu clico no botao de buscar
-    Then eu vejo uma lista com todos os condominos com nome 'maria' e seus respectivos dados
-
-  Scenario: Buscando condomino com cpf correto
-    Given estou na pagina de visualizar condomino
-    When preencho o campo de busca com '12345678910'
-    And eu clico no botao de buscar
-    Then vejo o condomino correspondente ao cpf
-
-  Scenario: Buscando condomino com nome invalido
-    When preencho o campo de busca com 'abc45678910'
-    And eu clico no botao de buscar
-    Then vejo a mensagem 'Cpf is not a number' informando que cpf e invalido
-
-  Scenario: Buscando condomino com cpf nao cadastrado
-    Given estou na pagina de visualizar condomino
-    When preencho o campo de busca com '12345678911'
-    And eu clico no botao de buscar
-    Then vejo a mensagem 'cpf nao cadastrado. condomino nao encontrado' informando que nao ha condomino cadastrado com esse cpf

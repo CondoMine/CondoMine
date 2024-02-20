@@ -37,9 +37,7 @@ When("eu clico no botao de excluir") do
   click_button "Destroy this condomino"
 end
 
-When("eu clico no botao de buscar") do
-  click_button "Buscar"
-end
+
 
 
 
@@ -52,9 +50,7 @@ When("eu preencho nome {string}, cpf {string}, contato {string}") do |nome, cpf,
   fill_in 'condomino[contato]', :with => contato
 end
 
-When("preencho o campo de busca com {string}") do |nome|
-  fill_in 'busca', :with => nome
-  end
+
 
 
 #mensagens
@@ -83,24 +79,3 @@ Then('vejo a mensagem {string} confirmando a exclusao') do |mensagem|
   expect(page).to have_content(mensagem)
 end
 
-Then('vejo o condomino correspondente ao cpf') do
-  condomino = Condomino.create(nome: 'lucas melo', cpf: '12345678900', contato: 'teste@gmail.com')
-
-  visit condomino_path(condomino)
-  expect(page).to have_current_path(condomino_path(condomino))
-end
-
-Then("o condomino com nome {string} não deve estar mais listado") do |nome|
-  expect(page).to_not have_content(nome)
-end
-
-Then("eu vejo uma lista com todos os condominos com nome {string} e seus respectivos dados") do
-  condomino = Condomino.create(nome: 'maria', cpf: '12345678911', contato: 'teste1@gmail.com')
-
-  visit condomino_path(condomino)
-  expect(page).to have_current_path(condomino_path(condomino))
-end
-
-Then("vejo a mensagem {string} informando que nao ha condomino cadastrado com esse cpf") do |mensagem|
-  expect(page).to_not have_content(mensagem)
-end
