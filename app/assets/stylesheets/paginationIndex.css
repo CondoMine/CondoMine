@@ -1,14 +1,14 @@
 /* css modularizado */
 .container-message,
 .container-tittle,
-.container-lista{
+.container-lista {
     width: 100%;
 }
 
 
 /* CSS especifico  */
 
-.container-view{
+.container-view {
     width: 80%;
     height: max-content;
     margin: 10px auto;
@@ -19,12 +19,12 @@
     padding: 10px;
 }
 
-.container-buttons{
+.container-buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.container-tittle{
+.container-tittle {
     text-align: center;
     font-style: italic;
 }
@@ -36,23 +36,23 @@
     padding: 5px;
 }
 
-.header-list,.registro{
+.header-list,.registro {
     display: flex;
     border-bottom: 1px solid rgba(0, 0, 0, 0.322);
     margin: 9px 0 0 0 ;
     line-height: 35px;
 }
-.header-list{
+.header-list {
     font-style: italic;
     font-weight: bolder;
 }
 
 .header-list div,
-.registro div{
+.registro div {
     flex: 1;
 }
 
-.filtro-lista{
+.filtro-lista {
     display: flex;
     align-items: center;
     justify-content: end;
