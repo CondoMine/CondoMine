@@ -79,3 +79,8 @@ Then('vejo a mensagem {string} confirmando a exclusao') do |mensagem|
   expect(page).to have_content(mensagem)
 end
 
+Then("o condomino com nome {string} não deve estar mais listado") do |nome|
+  expect(page).not_to have_content(nome)
+
+  expect(Condomino.find_by_nome(nome)).to be_nil
+end

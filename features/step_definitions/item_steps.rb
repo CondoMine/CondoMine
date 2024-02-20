@@ -7,8 +7,8 @@ Given('estou na pagina de visualizar item') do
   @ambiente = Ambiente.create(nome: 'piscina', tipo: 'area comum')
   @item = Item.create(nome: 'cadeira', estado: 'seminovo', tipo: 'movel', data_entrada: '2024-01-01', ambiente_id: @ambiente.id)
 
-  visit items_path(@item)
-  expect(page).to have_current_path(items_path(@item))
+  visit item_path(@item)
+  expect(page).to have_current_path(item_path(@item))
 end
 
 Given('estou na pagina de editar item') do
