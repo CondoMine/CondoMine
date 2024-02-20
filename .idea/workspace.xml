@@ -5,68 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ba47040-bc67-46f2-839a-ef11644b86d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a6a482ff-3b44-45bb-84c8-0289afc4f4fb.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_02_2024_22_20_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/paginationIndex.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/funcionarios_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/items_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/funcionarios_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/items_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/funcionario.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/item.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/funcionarios/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/funcionarios/_funcionario.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/funcionarios/_funcionario.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/funcionarios/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/funcionarios/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/funcionarios/index.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/funcionarios/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/funcionarios/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/funcionarios/show.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/items/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/items/_item.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/items/_item.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/items/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/items/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/items/index.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/items/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/items/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/items/show.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20240213174442_create_items.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20240217185852_create_funcionarios.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/funcionario.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/item.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/step_definitions/funcionario._steps.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/step_definitions/item_steps.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/funcionarios_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/items_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/funcionarios.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/items.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/funcionario_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/item_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/system/funcionarios_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/system/items_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/rubyonrails.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/rubyonrails.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a92c38f-c15e-4301-8d0e-46c8f8b68a45.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0a92c38f-c15e-4301-8d0e-46c8f8b68a45.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_01_2024_16_55__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/condominos_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/condominos_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/ambiente.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/ambiente.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/condomino.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/condomino.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/ambientes/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/ambientes/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/condominos/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/condominos/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/reservas/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/reservas/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/welcome/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/test.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/test.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/condomino.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/condomino.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/step_definitions/condomino_steps.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/step_definitions/condomino_steps.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -344,7 +283,7 @@
       <workItem from="1707448314880" duration="341000" />
       <workItem from="1707448675147" duration="69000" />
       <workItem from="1708195707863" duration="8128000" />
-      <workItem from="1708306947136" duration="11529000" />
+      <workItem from="1708306947136" duration="13144000" />
     </task>
     <servers />
   </component>
