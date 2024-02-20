@@ -11,7 +11,7 @@ class Item < ApplicationRecord
   private
 
   def data_entrada_nao_posterior_a_hoje
-    if data_entrada.present? && data_entrada > Date.today
+    if data_entrada.present? && data_entrada > Time.zone.today
       errors.add(:data_entrada, "não pode ser posterior à data atual")
     end
   end
