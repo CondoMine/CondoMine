@@ -22,8 +22,10 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_26_010759) do
     t.string "nome"
     t.string "cpf"
     t.string "contato"
+    t.integer "funcionario_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["funcionario_id"], name: "index_condominos_on_funcionario_id"
   end
 
   create_table "funcionarios", force: :cascade do |t|
