@@ -3,6 +3,7 @@ Given('estou na pagina de cadastrar funcionario') do
   expect(page).to have_current_path('/funcionarios/new')
 end
 
+
 When('eu preencho nome {string}, cpf {string}, funcao {string}') do |nome, cpf, funcao|
   fill_in 'funcionario[nome]', :with => nome
   fill_in 'funcionario[cpf]', :with => cpf
@@ -17,13 +18,10 @@ Then('vejo a mensagem {string} confirmando que o funcionario foi cadastrado corr
   expect(page).to have_content(mensagem)
 end
 
-Given('estou na pagina de editar cadastro de funcionario') do
-  funcionario = Funcionario.create(nome: 'eduardo', cpf: '12345678910', funcao: 'gerente')
-
-  visit edit_funcionario_path(funcionario)
-  expect(page).to have_current_path(edit_funcionario_path(funcionario))
-
+Given('estou na pagina de editar cadastro de funcionario com ID {string}') do |id|
+  visit edit_funcionario_path(id)
 end
+
 
 When('eu preencho nome {string}, cpf {string}, funcionario {string}') do |nome, cpf, funcao|
   fill_in 'funcionario[nome]', :with => nome
