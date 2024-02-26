@@ -12,6 +12,11 @@
   <% end %>
 
   <div>
+    <%= form.label :funcionario_id %>
+    <%= form.collection_select :funcionario_id, Funcionario.all, :id, :nome, prompt: "Selecione um Funcionário responsável" %>
+  </div>
+
+  <div>
     <%= form.label :nome, style: "display: block" %>
     <%= form.text_field :nome %>
   </div>
