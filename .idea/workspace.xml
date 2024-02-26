@@ -6,9 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="3ba47040-bc67-46f2-839a-ef11644b86d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/funcionarios_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/funcionarios_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/condominos/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/condominos/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/ambiente.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/ambiente.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/buscaCondomino.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/buscaCondomino.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/condomino.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/condomino.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/funcionario.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/funcionario.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/item.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/item.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/reserva.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/reserva.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/step_definitions/ambiente_steps.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/step_definitions/ambiente_steps.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/step_definitions/authentication_steps.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/step_definitions/authentication_steps.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/step_definitions/buscaCondomino_steps.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/step_definitions/buscaCondomino_steps.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/step_definitions/condomino_steps.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/step_definitions/condomino_steps.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/step_definitions/funcionario_steps.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/step_definitions/funcionario_steps.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/step_definitions/item_steps.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/step_definitions/item_steps.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/step_definitions/reserva_steps.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/step_definitions/reserva_steps.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/support/devise.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/support/devise.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/support/env.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/support/env.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,7 +293,7 @@
       <workItem from="1707448675147" duration="69000" />
       <workItem from="1708195707863" duration="8128000" />
       <workItem from="1708306947136" duration="13144000" />
-      <workItem from="1708905693771" duration="8413000" />
+      <workItem from="1708905693771" duration="9802000" />
     </task>
     <servers />
   </component>
