@@ -25,11 +25,9 @@ class AmbientesController < ApplicationController
 
     respond_to do |format|
       if @ambiente.save
-        format.html { redirect_to ambiente_url(@ambiente), notice: "Ambiente was successfully created." }
-        format.json { render :show, status: :created, location: @ambiente }
+        success_response(@ambiente, 'created')
       else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @ambiente.errors, status: :unprocessable_entity }
+        failure_response(:new, @ambiente.errors)
       end
     end
   end
@@ -38,11 +36,9 @@ class AmbientesController < ApplicationController
   def update
     respond_to do |format|
       if @ambiente.update(ambiente_params)
-        format.html { redirect_to ambiente_url(@ambiente), notice: "Ambiente was successfully updated." }
-        format.json { render :show, status: :ok, location: @ambiente }
+        success_response(@ambiente, 'updated')
       else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @ambiente.errors, status: :unprocessable_entity }
+        failure_response(:edit, @ambiente.errors)
       end
     end
   end
@@ -50,7 +46,6 @@ class AmbientesController < ApplicationController
   # DELETE /ambientes/1 or /ambientes/1.json
   def destroy
     @ambiente.destroy
-
     respond_to do |format|
       format.html { redirect_to ambientes_url, notice: "Ambiente was successfully destroyed." }
       format.json { head :no_content }
@@ -58,13 +53,26 @@ class AmbientesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_ambiente
-      @ambiente = Ambiente.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def ambiente_params
-      params.require(:ambiente).permit(:nome, :tipo)
+  def set_ambiente
+    @ambiente = Ambiente.find(params[:id])
+  end
+
+  def ambiente_params
+    params.require(:ambiente).permit(:nome, :tipo)
+  end
+
+  def success_response(ambiente, action)
+    respond_to do |format|
+      format.html { redirect_to ambiente_url(ambiente), notice: "Ambiente was successfully #{action}." }
+      format.json { render :show, status: action == 'created' ? :created : :ok, location: ambiente }
     end
+  end
+
+  def failure_response(action, errors)
+    respond_to do |format|
+      format.html { render action, status: :unprocessable_entity }
+      format.json { render json: errors, status: :unprocessable_entity }
+    end
+  end
 end

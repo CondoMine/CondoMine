@@ -1,6 +1,7 @@
 class Condomino < ApplicationRecord
 
   has_many :reservas
+  belongs_to :funcionario
 
   validates :nome, presence: true, length: {minimum: 5}, numericality: false
   validates :cpf, presence: true, length: {maximum: 11}, uniqueness: true, numericality: {only_integer: true}

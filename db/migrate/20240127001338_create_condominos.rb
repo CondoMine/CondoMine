@@ -5,6 +5,8 @@ class CreateCondominos < ActiveRecord::Migration[7.0]
       t.string :cpf
       t.string :contato
 
+      t.references :funcionario, null: false, foreing_keys: true
+
       t.timestamps
     end
   end
