@@ -1,5 +1,9 @@
-  
-  Given('estou na pagina de visualizar condominos') do
+Given('eu estou na pagina de busca do condomino') do
+  visit "/condominos"
+end
+
+
+Given('estou na pagina de visualizar condominos') do
     visit condominos_path
   end
 

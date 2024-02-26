@@ -1,12 +1,14 @@
+
 Feature: Reservar ambiente
   As a Condomino do condominio
   I want to reservar um ambiente em horario e data especificos
   So that eu possa usar o ambiente de forma privada
 
   Background:
-    Given estou na pagina de cadastro de reserva
-    When existe um Condomino com o nome "Marcos Teste", cpf "12345678875", contato "marcosteste@teste.com" no sistema
-    And existe um Ambiente com nome "Quadra", tipo "Poliesportiva" no sistema de reservas
+    Given Eu estou logado como um usuario
+    Given existe um Condomino com o nome "Marcos Teste", cpf "12345678875", contato "marcosteste@teste.com" no sistema
+    Given existe um Ambiente com nome "Quadra", tipo "Poliesportiva" no sistema de reservas
+    And estou na pagina de gerenciamento de reserva
 
 
   Scenario: fazer uma nova reserva

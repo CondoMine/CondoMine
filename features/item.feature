@@ -1,11 +1,14 @@
+
+
 Feature: gerenciamento de itens do ambiente de ambiente
   As a usuario do sistema
   I want to registrar, editar e remover itens para ambientes existentes
   So that eu mantenha patrimonio do condominio atualizado
 
   Background:
-    Given estou na pagina de cadastrar item
-    When existe um Ambiente com nome "Quadra", tipo "Poliesportiva" no sistema
+    Given Eu estou logado como um usuario
+    Given existe um Ambiente com nome "Quadra", tipo "Poliesportiva" no sistema
+    And  estou na pagina de gerenciamento de item
 
   Scenario: criar item
     Given estou na pagina de cadastrar item
@@ -21,9 +24,10 @@ Feature: gerenciamento de itens do ambiente de ambiente
     And eu clico no botao Create Item
     Then vejo a mensagem "Ambiente must exist" e "Data entrada deve ser fornecida" de que se deve ter um ambiente selecionado e que a data de entrada deve ser fornecida
 
-  Scenario: visualizar item
-    Given estou na pagina de visualizar item
-    Then eu vejo os detalhes do item
+  Scenario: criar item sem preencher nenhum campo
+    Given estou na pagina de cadastrar item
+    When eu clico no botao Create Item sem preencher nenhum campo
+    Then vejo mensagens de erro indicando que todos os campos sao obrigatorios
 
   Scenario: editar nome de um item
     Given estou na pagina de editar item

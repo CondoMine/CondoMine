@@ -1,10 +1,13 @@
+
 Feature: Busca de condomino
     As a Usuario do sistema
     I want to buscar condominos informando nome ou CPF
     So that eu visualize o cadastro completo do condomino desejado
 
     Background:
+        Given Eu estou logado como um usuario
         Given existem os condôminos "Marcos Silva" com cpf: "12345678875" e contato: "87981123456" e "Lucas da Silva" com cpf: "98765432109" e contato: "87981987654" no sistema
+        And eu estou na pagina de busca do condomino
 
     Scenario: Buscando condomino inexistente pelo nome
         Given estou na pagina de visualizar condominos

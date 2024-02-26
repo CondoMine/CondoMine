@@ -1,7 +1,13 @@
+
+Given('estou na pagina de gerenciamento de funcionario') do
+  visit "/funcionarios"
+end
+
 Given('estou na pagina de cadastrar funcionario') do
   visit '/funcionarios/new'
   expect(page).to have_current_path('/funcionarios/new')
 end
+
 
 When('eu preencho nome {string}, cpf {string}, funcao {string}') do |nome, cpf, funcao|
   fill_in 'funcionario[nome]', :with => nome

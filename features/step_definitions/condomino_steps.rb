@@ -1,5 +1,10 @@
 #rotas dos cenarios
 
+Given('eu estou na pagina de gerenciamento de condomino') do
+  visit "/condominos"
+end
+
+
 Given('estou na pagina de cadastrar condomino') do
   visit '/condominos/new'
   expect(page).to have_current_path('/condominos/new')

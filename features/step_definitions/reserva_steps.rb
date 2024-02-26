@@ -1,4 +1,14 @@
 #Elementos do Background.
+Given('estou na tela inicial adiciono, email {string} e password {string} faco login') do |email, password|
+  visit new_user_registration_path
+  fill_in "Email", with: email
+  fill_in "Password", with: password
+  click_button "Sign up"
+end
+
+Given('estou na pagina de gerenciamento de reserva') do
+  visit "/reservas"
+end
 
 Given('existe um Condomino com o nome {string}, cpf {string}, contato {string} no sistema') do |nome, cpf, contato|
   Condomino.find_or_create_by!(nome: nome, cpf: cpf.gsub(/^0-9/, ''), contato: contato)

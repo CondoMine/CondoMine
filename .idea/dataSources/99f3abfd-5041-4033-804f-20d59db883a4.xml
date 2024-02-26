@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="SQLite - identifier.sqlite">
-  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.48">
-    <root id="1"/>
+<dataSource name="identifier.sqlite">
+  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.32">
+    <root id="1">
+      <ServerVersion>3.43.0</ServerVersion>
+    </root>
     <collation id="2" parent="1" name="BINARY"/>
     <collation id="3" parent="1" name="NOCASE"/>
     <collation id="4" parent="1" name="RTRIM"/>
@@ -1465,5 +1467,28 @@
     <argument id="517" parent="176">
       <Position>1</Position>
     </argument>
+    <table id="518" parent="177" name="sqlite_master">
+      <System>1</System>
+    </table>
+    <column id="519" parent="518" name="type">
+      <DataType>TEXT|0s</DataType>
+      <Position>1</Position>
+    </column>
+    <column id="520" parent="518" name="name">
+      <DataType>TEXT|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="521" parent="518" name="tbl_name">
+      <DataType>TEXT|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="522" parent="518" name="rootpage">
+      <DataType>INT|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="523" parent="518" name="sql">
+      <DataType>TEXT|0s</DataType>
+      <Position>5</Position>
+    </column>
   </database-model>
 </dataSource>
