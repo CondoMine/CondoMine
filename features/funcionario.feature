@@ -21,8 +21,8 @@ Feature: Gerenciamento de funcionario
     And eu clico no botao create funcionario
     Then vejo a mensagem 'Cpf deve ter 11 dígitos numéricos' informando que cpf e invalido
 
-  Scenario: editar o funcinario com ID especifico
-    Given estou na pagina de editar cadastro de funcionario com ID "1"
+  Scenario: editar nome de funcionario
+    Given estou na pagina de editar cadastro de funcionario
     When eu preencho nome 'eduardo', cpf '12345678910', funcionario 'gerente'
     And eu clico no botao update Funcionario
     Then vejo a mensagem 'Funcionario was successfully updated.' indicando que o cadastro foi atualizado
