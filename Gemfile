@@ -45,7 +45,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 # Use Sass to process CSS
-#gem 'sassc-rails', '~> 2.1.2'
+gem 'sassc-rails', '~> 2.1.2'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
@@ -82,13 +82,7 @@ group :test do
 
 end
 
-group :actions do
-  gem 'pg'
-  gem 'activerecord-postgresql-adapter'
-end
-
 group :production do
   gem 'pg'
   gem 'activerecord-postgresql-adapter'
 end
-gem "rspec", "~> 3.13"
