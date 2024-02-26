@@ -1,3 +1,8 @@
+
+Given('estou na pagina de gerenciamento de funcionario') do
+  visit "/funcionarios"
+end
+
 Given('estou na pagina de cadastrar funcionario') do
   visit '/funcionarios/new'
   expect(page).to have_current_path('/funcionarios/new')

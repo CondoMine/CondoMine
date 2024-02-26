@@ -1,3 +1,8 @@
+
+Given('estou na pagina de gerenciamento de ambiente') do
+  visit "/ambientes"
+end
+
 Given('estou na pagina de cadastrar ambiente') do
   visit '/ambientes/new'
   expect(page).to have_current_path('/ambientes/new')

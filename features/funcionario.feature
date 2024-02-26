@@ -1,7 +1,12 @@
+
 Feature: Gerenciamento de funcionario
   As a Usuario do sistema
   I want to registrar, editar e remover um funcionario
   So that eu mantenha o registro dos funcionarios do condominio atualizado
+
+  Background:
+    Given  Eu estou logado como um usuario
+    Given estou na pagina de gerenciamento de funcionario
 
   Scenario: cadastrar funcionario com nome vazio
     Given estou na pagina de cadastrar funcionario

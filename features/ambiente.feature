@@ -1,7 +1,14 @@
+
 Feature: gerenciamento de ambiente
   as a usuario do sistema
   i want to registrar, editar e remover um ambiente
   so that eu mantenha as amenidades do condominio atualizadas
+
+
+  Background:
+    Given Eu estou logado como um usuario
+    Given estou na pagina de gerenciamento de ambiente
+
 
   Scenario: cadastrar ambiente com nome vazio
     Given estou na pagina de cadastrar ambiente

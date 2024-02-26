@@ -1,7 +1,12 @@
+
 Feature: gerenciamento de condomino
   as a usuario do sistema
   I want to registrar, editar e remover um condomino
   So that eu mantenha o registro dos moradores do condominio atualizado
+
+  Background:
+    Given Eu estou logado como um usuario
+    Given eu estou na pagina de gerenciamento de condomino
 
   Scenario: cadastrar condomino com nome vazio
     Given estou na pagina de cadastrar condomino

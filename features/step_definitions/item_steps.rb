@@ -1,3 +1,7 @@
+Given('estou na pagina de gerenciamento de item') do
+  visit "/items"
+end
+
 Given('estou na pagina de cadastrar item') do
   visit '/items/new'
   expect(page).to have_current_path('/items/new')
@@ -29,9 +33,6 @@ When("eu clico no botao Update Item") do
   click_button "Update Item"
 end
 
-When("eu clico no botao Destroy this item") do
-  click_button "Destroy this item"
-end
 
 # Preenchimento de dados
 
@@ -95,3 +96,17 @@ Then('eu vejo os detalhes do item') do
   expect(page).to have_content('Data entrada: 2024-01-01')
   expect(page).to have_content("Ambiente: #{@item.ambiente.nome}")
 end
+
+When("eu clico no botao Create Item sem preencher nenhum campo") do
+  click_button "Create Item"
+end
+
+Then("vejo mensagens de erro indicando que todos os campos sao obrigatorios") do
+  expect(page).to have_content("Nome can't be blank")
+  expect(page).to have_content("Estado can't be blank")
+  expect(page).to have_content("Tipo can't be blank")
+  expect(page).to have_content("Ambiente must exist")
+  expect(page).to have_content("Data entrada deve ser fornecida")
+end
+
+
